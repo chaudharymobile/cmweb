@@ -428,6 +428,15 @@ h6 {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+#hero #job-sheet-input {
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  box-shadow: none;
+}
+
+#hero #job-sheet-input:hover {
+  border: var(--bs-border-width) solid #7b20b7;
+}
+
 @media (max-width: 991px) {
   #hero {
     height: 100vh;

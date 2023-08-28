@@ -83,7 +83,26 @@
           <h1>Revive Your Mobile Experience</h1>
           <h2>Expert Mobile Repair Services at Your Fingertips</h2>
           <div class="d-flex">
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <form id="job-sheet-form" class="modal-content">
+                <div class="modal-header border-0">
+                  <!-- <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5> -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <input class="form-control" type="number" name="number" id="job-sheet-input"
+                    placeholder="Enter Job Sheet Number" />
+                </div>
+                <div class="modal-footer border-0">
+                  <button class="btn-get-started  border-0" id="job-sheet-button">Search</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <a class="btn-get-started scrollto" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Search
+            Job Sheet Number</a>
             <a href="https://www.youtube.com/embed/J0jU4MvbuH0?si=9OenVeSOJ60ad-Wn" class="glightbox btn-watch-video"><i
                 class="bi bi-play-circle"></i><span>Watch Video</span></a>
           </div>

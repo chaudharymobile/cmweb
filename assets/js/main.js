@@ -87,6 +87,22 @@
     window.addEventListener('load', headerScrolled)
     onscroll(document, headerScrolled)
   }
+  
+  /**
+   * Search Job Number
+   */
+  const jobSheetForm = document.getElementById("job-sheet-form");
+  const jobSheetInput = document.getElementById("job-sheet-input");
+
+  jobSheetForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    console.log(jobSheetInput.value);
+    if (jobSheetInput.value === null || jobSheetInput.value === "") {
+      alert("Please Enter a valid Job Number")
+    }
+    window.open("https://creatorapp.zohopublic.in/cmrepair.zoho/chaudhary-mobile/report-perma/Items_for_customer/ZA1v4PHsC5SMAGOzEC8zv5aNPx4vCa1MQkE2sfSbWgOXpCbbvK2EMteB9Mt88AAg4MkpnBha4rVQwbO4HFNwMW8FJqnrMpgjUWaA?Job_Number=" + jobSheetInput.value, "_parent");
+    jobSheetInput.value = ""
+  })
 
   /**
    * Back to top button
